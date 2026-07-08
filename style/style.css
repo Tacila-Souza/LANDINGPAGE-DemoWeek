@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+}
+
+.section {
+    position: relative;
+    line-height: 0;
+}
+
+.section img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.btn-jogar {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: clamp(8px, 1.5vw, 30px) clamp(20px, 4vw, 80px);
+    background: #ff4500;
+    color: #fff;
+    font-size: clamp(0.65rem, 1.5vw, 2rem);
+    font-family: 'Press Start 2P', monospace;
+    text-transform: uppercase;
+    letter-spacing: clamp(1px, 0.2vw, 3px);
+    text-decoration: none;
+    border-radius: clamp(4px, 0.6vw, 12px);
+    z-index: 10;
+    transition: background 0.3s;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-jogar:hover {
+    background: #e03d00;
+}
